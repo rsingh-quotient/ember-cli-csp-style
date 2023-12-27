@@ -36,7 +36,7 @@ export default Mixin.create({
 	}),
 
 	_writeStyle: observer('_calculatedStyle', function() {
-		let elements = this.$();
+		let elements = [this.element];
 		if (elements && elements.length > 0)
 		{
       let calculatedStyle = this._calculatedStyle;
